@@ -12,9 +12,9 @@ import org.springframework.web.client.HttpServerErrorException;
 import org.springframework.web.client.ResourceAccessException;
 import org.springframework.web.client.RestTemplate;
 
+import com.appsdeveloper.ws.core.ProductCreatedEvent;
 import com.appsdeveloper.ws.emailnotification.error.NotRetryableException;
 import com.appsdeveloper.ws.emailnotification.error.RetryableException;
-import com.appsdeveloperblog.ws.core.ProductCreatedEvent;
 
 @Component
 @KafkaListener(topics = "product-created-events-topic")
